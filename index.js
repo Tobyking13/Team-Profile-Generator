@@ -104,7 +104,6 @@ const promptForIntern = () => {
             response.id,
             response.school
             ));
-        console.log(employeesArray)
         promptForNextEmployee();
     })
 }
