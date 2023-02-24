@@ -16,19 +16,21 @@ const render = require("./src/page-template.js");
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 
-const questions = [{
+function questions(position) {
+    return [{
         type: 'text',
-        message: 'What\'s is the employees name?',
+        message: `What\'s is the ${position}'s name?`,
         name: 'name'
     }, {
         type: 'text',
-        message: 'What\'s the employees email?',
+        message: `What\'s the ${position}'s email?`,
         name: 'email'
     }, {
         type: 'text',
-        message: 'What\'s the employees id?',
+        message: `What\'s the ${position}'s id?`,
         name: 'id'
 }]
+}
 
 const promptForNextEmployee = () => {
     inquirer.prompt([{
@@ -46,6 +48,7 @@ const promptForNextEmployee = () => {
                 break;
             default:
                 render;
+                console.log(employeesArray)
                 return;
         }
     })
@@ -53,10 +56,10 @@ const promptForNextEmployee = () => {
 
 const promptForManager = () => {
     inquirer
-    .prompt([...questions, {
-        type: 'text',
-        message: 'What\'s the managers office number?',
-        name: 'officeNum'
+    .prompt([...questions("manager"), {
+            type: 'text',
+            message: 'What\'s the managers office number?',
+            name: 'officeNum'
     }])
     .then(response => {
         employeesArray.push(new Manager(
@@ -71,7 +74,7 @@ const promptForManager = () => {
 
 const promptForEngineer = () => {
     inquirer
-    .prompt([...questions, {
+    .prompt([...questions("engineer"), {
         type: 'text',
         message: 'What\'s the engineers GitHub username?',
         name: 'github'
@@ -89,7 +92,7 @@ const promptForEngineer = () => {
 
 const promptForIntern = () => {
     inquirer
-    .prompt([...questions, {
+    .prompt([...questions("intern"), {
         type: 'text',
         message: 'What\'s the interns school?',
         name: 'school'
