@@ -1,41 +1,40 @@
-.team-heading {
+/* .team-heading {
   background-color: #e84855;
   color: #ffffff;
 }
 
-​.team-area {
-  max-width: 1000px;
+.team-area {
+  text-align: center;
+  width: 100%;
   margin: 3em auto;
-  flex-wrap: wrap; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-​.employee-card {
-  margin: 1em;
-  max-width: 280px;
-  width: 90%;
+.employee-card {
+  box-sizing: border-box;
+  margin: 20px;
   min-height: 22rem;
-  background-color: #007bff;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-width: 18rem;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   border: none;
 }
 
-.card-header{
+
+
+.card-header {
   background-color: #007bff;
   color: white;
 }
 
-​.card-body {
+.card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #f6f7f8;
 }
 
-​.list-group-item {
+.list-group-item {
   color: #000000;
   text-decoration: none;
-}
+} */

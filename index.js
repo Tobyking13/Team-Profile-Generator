@@ -12,7 +12,6 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
-// import { team } from render
 const { default: generate } = require("@babel/generator");
 
 
@@ -49,9 +48,7 @@ const promptForNextEmployee = () => {
                 promptForIntern(response.position);
                 break;
             default:
-                //console.log(render(employeesArray));
                 buildPage();
-                console.log(employeesArray)
                 return;
         }
     })
@@ -116,6 +113,5 @@ const buildPage = () => {
         err ? console.error(err) : console.log('team.html created.')
     } )
 }
-
 
 promptForManager();

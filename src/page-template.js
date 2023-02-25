@@ -108,7 +108,7 @@ module.exports = team => {
     </div>
     <div class="container">
         <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+            <div class="team-area col-12">
                 ${generateTeam(team)}
             </div>
         </div>
