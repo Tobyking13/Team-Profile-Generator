@@ -21,15 +21,33 @@ function questions(position) {
     return [{
         type: 'text',
         message: `What\'s is the ${position}'s name?`,
-        name: 'name'
+        name: 'name',
+        validate: function(position) {
+            if (position !== "") {
+                return true;
+            }
+            console.log('|  Please enter a name');
+        }
     }, {
         type: 'text',
         message: `What\'s the ${position}'s email?`,
-        name: 'email'
+        name: 'email',
+        validate: function(position) {
+            if (position.includes('@') ===  true && position !== "") {
+                return true;
+            }
+            console.log('|  This is not a valid email address');
+        }
     }, {
         type: 'text',
         message: `What\'s the ${position}'s id?`,
-        name: 'id'
+        name: 'id',
+        validate: function(position){
+            if(+position > 0) {
+                return true;
+            }
+            console.log('|  The ID must be greater than 0');
+        }
 }]
 }
 
