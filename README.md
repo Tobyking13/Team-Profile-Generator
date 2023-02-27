@@ -22,17 +22,14 @@ Overall, I've built an application that provides an easy-to-use tool for users t
 
 ## Installation
 
-Google Drive link to myreadmegenerator_README.md:
+Google Drive link to team.html:
 
-https://drive.google.com/file/d/1kkGPIuT5uOmX_WaqHS38WOX7ZMxyUUNn/view?usp=sharing
+https://drive.google.com/file/d/1XJgw7H_JU8jImwxP7CsB9bWoiUvIflPN/view?usp=sharing
 
-Google Drive link to video of the application:
-
-https://drive.google.com/file/d/11-uJqu-O8uAIj_5cviDBVJ2eham0wXq9/view?usp=sharing
 
 ## Usage
 
-![Toby King README generator](./assets/screenshot.png "Toby King README generator" )
+![Toby King Team-Profile-Generator](./assets/Screenshot.png "Toby King Team-Profile-Generator" )
 Screenshot of the application.
 
 ## Features
