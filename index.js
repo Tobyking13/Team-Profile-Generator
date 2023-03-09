@@ -82,8 +82,8 @@ const promptForManager = () => {
     .then(response => {
         employeesArray.push(new Manager(
             response.name,
-            response.email,
             response.id,
+            response.email,
             response.officeNum
             ));
         promptForNextEmployee();
@@ -100,8 +100,8 @@ const promptForEngineer = () => {
     .then(response => {
         employeesArray.push(new Engineer(
             response.name,
-            response.email,
             response.id,
+            response.email,
             response.github
             ));
         promptForNextEmployee();
@@ -118,8 +118,8 @@ const promptForIntern = () => {
     .then(response => {
         employeesArray.push(new Intern(
             response.name,
-            response.email,
             response.id,
+            response.email,
             response.school
             ));
         promptForNextEmployee();
